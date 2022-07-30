@@ -1,0 +1,30 @@
+.container {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.navItem {
+	background-color: transparent;
+	border: none;
+	outline: none;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 50%;
+	padding: 8px;
+	cursor: pointer;
+}
+
+.navItem svg {
+	height: 24px;
+	width: 24px;
+}
+
+.navItem:hover,
+.navItem:active {
+	background-color: rgba(0, 0, 0, 0.15);
+}
