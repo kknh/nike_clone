@@ -33,6 +33,14 @@
 	animation-fill-mode: forwards;
 }
 
+.searchBarForm:hover {
+	background-color: #cdcaca6a;
+}
+
+.searchBarForm:hover .searchBarInput::placeholder {
+	color: rgba(108, 108, 108, 0.781);
+}
+
 .searchBarInput {
 	width: 100%;
 	height: 100%;
@@ -45,7 +53,7 @@
 }
 
 .searchBarInput::placeholder {
-	color: rgba(143, 143, 143, 0.514);
+	color: rgba(128, 127, 127, 0.514);
 }
 
 .btn {
@@ -64,7 +72,7 @@
 
 .searchBtn {
 	position: absolute;
-	left: 8px;
+	left: 0px;
 	top: 0px;
 }
 

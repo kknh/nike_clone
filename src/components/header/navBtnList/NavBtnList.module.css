@@ -28,3 +28,45 @@
 .navItem:active {
 	background-color: rgba(0, 0, 0, 0.15);
 }
+
+.favoriteIcon {
+	display: none;
+}
+
+@media screen and (min-width: 960px) {
+	.searchIcon {
+		padding: 8px;
+		padding-right: 150px;
+		border-radius: 20px;
+		background-color: rgba(0, 0, 0, 0.05);
+		position: relative;
+		cursor: text;
+		order: -1;
+	}
+	.searchIcon::before {
+		content: 'Search';
+		position: absolute;
+		top: 12px;
+		left: 40px;
+		font-size: 16px;
+		line-height: 16px;
+		font-weight: 500;
+		color: rgba(0, 0, 0, 0.25);
+	}
+
+	.searchIcon:hover {
+		background-color: rgba(0, 0, 0, 0.15);
+	}
+
+	.searchIcon:hover::before {
+		color: rgba(0, 0, 0, 0.5);
+	}
+
+	.favoriteIcon {
+		display: flex;
+	}
+
+	.menuIcon {
+		display: none;
+	}
+}
