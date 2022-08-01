@@ -1,0 +1,102 @@
+.container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(3px);
+}
+.menu {
+	width: 300px;
+	height: 1000px;
+	padding: 0 40px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: white;
+	animation: slideToLeft 300ms ease-out 1ms 1 normal both;
+}
+
+.closeBtn {
+	background-color: transparent;
+	border: none;
+	outline: none;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 50px;
+	padding: 8px;
+	cursor: pointer;
+	transform: translateX(10px);
+	margin: 10px 0;
+	margin-left: auto;
+}
+
+.closeBtn:hover {
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+.closeBtn > svg {
+	width: 15px;
+	height: 15px;
+}
+
+.menu ul {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.menu ul li {
+	width: 100%;
+	list-style: none;
+}
+
+.menu ul li:nth-of-type(8) {
+	margin-top: 30px;
+}
+
+.listItem {
+	text-decoration: none;
+	color: inherit;
+	font-size: 24px;
+	line-height: 24px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.listItem svg {
+	width: 7px;
+}
+
+.iconLink {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	cursor: pointer;
+	text-decoration: none;
+	color: inherit;
+}
+
+.iconLink span {
+	margin-left: 20px;
+}
+
+.footer {
+	margin-top: 100px;
+}
+
+@keyframes slideToLeft {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}

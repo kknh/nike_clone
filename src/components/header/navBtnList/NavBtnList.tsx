@@ -6,7 +6,11 @@ import { ReactComponent as Favorite } from '../../../assets/favorite.svg'
 import SearchModal from '../searchModal/SearchModal'
 import { useState } from 'react'
 
-const NavBtnList = () => {
+interface NavBtnListProps {
+	setShowSideMenu: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+const NavBtnList = ({ setShowSideMenu }: NavBtnListProps) => {
 	const [showSearchModal, setShowSearchModal] = useState<boolean>(false)
 	return (
 		<nav className={styles.container}>
@@ -24,7 +28,10 @@ const NavBtnList = () => {
 				<Search />
 			</button>
 
-			<button className={`${styles.navItem} ${styles.menuIcon}`}>
+			<button
+				className={`${styles.navItem} ${styles.menuIcon}`}
+				onClick={() => setShowSideMenu(true)}
+			>
 				<Menu />
 			</button>
 			{showSearchModal && (

@@ -5,6 +5,7 @@
 	background-color: white;
 	display: flex;
 	align-items: center;
+	position: relative; /* for SideNavMenu*/
 }
 
 @media screen and (min-width: 960px) {
